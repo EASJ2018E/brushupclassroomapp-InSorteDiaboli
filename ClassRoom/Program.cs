@@ -14,7 +14,7 @@ namespace ClassRoom
             klasseRum.Klassenavn = "3B";
             klasseRum.SemesterStart = new DateTime(2018,9,4);
             klasseRum.Klasseliste = new List<Studerende>{new Studerende("Frederik", 2, 4), new Studerende("Louis", 4, 5), new Studerende("Vagner", 9, 6)};
-
+            
             Console.WriteLine(klasseRum.Klassenavn);
             Console.WriteLine(klasseRum.SemesterStart);
             
@@ -23,8 +23,8 @@ namespace ClassRoom
                 
                 Console.WriteLine(student);
             }
-            
 
+            klasseRum.SeasonCount();
         }
     }
 }
