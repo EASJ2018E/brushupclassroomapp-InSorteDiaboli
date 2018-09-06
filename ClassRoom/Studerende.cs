@@ -21,7 +21,7 @@ namespace ClassRoom
 
         public override string ToString()
         {
-            return Navn;
+            return Navn + ", " + Fødselsmåned + ", " + Fødselsdag;
         }
     }
 }
