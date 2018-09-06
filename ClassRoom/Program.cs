@@ -17,9 +17,10 @@ namespace ClassRoom
 
             Console.WriteLine(klasseRum.Klassenavn);
             Console.WriteLine(klasseRum.SemesterStart);
-            foreach (var name in klasseRum.Klasseliste)
+            
+            foreach (var student in klasseRum.Klasseliste)
             {
-                Console.WriteLine(name);
+                Console.WriteLine(student);
             }
             
 
