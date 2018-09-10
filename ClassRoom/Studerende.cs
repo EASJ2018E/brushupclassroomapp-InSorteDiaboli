@@ -43,7 +43,7 @@ namespace ClassRoom
             {
                 Console.WriteLine("Fødselsmåned kan ikke være større end 12");
             }
-            return Navn;
+            return Season;
         }
 
         
