@@ -55,5 +55,25 @@ namespace ClassRoom
 
             Console.WriteLine($"Antallet af elever der har fødselsdag i hver sin sæson er: {numberofSpring} elever om foråret, {numberofSummer} elever om summeren, {numberofAutumn} elever om efteråret og {numberofVinter} elever om vinteren");
         }
+
+        public void BirthSeasonLinq()
+        {
+            var amountVinter = from s in Klasseliste
+                where s.Fødselsmåned == 1 || s.Fødselsmåned == 2 || s.Fødselsmåned == 12
+                select s;
+            var amountSpring = from s in Klasseliste
+                where s.Fødselsmåned == 3 || s.Fødselsmåned == 4 || s.Fødselsmåned == 5
+                select s;
+            var amountSummer = from s in Klasseliste
+                where s.Fødselsmåned == 6 || s.Fødselsmåned == 7 || s.Fødselsmåned == 8
+                select s;
+            var amountAutumn = from s in Klasseliste
+                where s.Fødselsmåned == 9 || s.Fødselsmåned == 10 || s.Fødselsmåned == 11
+                select s;
+            Console.WriteLine(amountSpring + " elever om foråret");
+            Console.WriteLine(amountSummer + " elever om sommeren");
+            Console.WriteLine(amountAutumn + " elever om efteråret");
+            Console.WriteLine(amountVinter + " elever om vinteren");
+        }
     }
 }

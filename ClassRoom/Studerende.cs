@@ -46,6 +46,8 @@ namespace ClassRoom
             return Navn;
         }
 
+        
+
         public override string ToString()
         {
             return Navn + ", " + Fødselsmåned + ", " + Fødselsdag + ", " + Season;

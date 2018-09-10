@@ -25,6 +25,7 @@ namespace ClassRoom
             }
 
             klasseRum.SeasonCount();
+            klasseRum.BirthSeasonLinq();
         }
     }
 }
